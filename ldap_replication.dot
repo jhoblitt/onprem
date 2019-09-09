@@ -1,0 +1,27 @@
+digraph top {
+//  dpi=100
+  ranksep=0.5
+  rankdir=TB
+  overlap=false
+  clusterrank=local
+
+  {
+    node [shape=ellipse fontsize=14 style=filled fillcolor=white color=darkgreen]
+    base [label="base"]
+    summit [label="summit"]
+    tucson [label="tucson"]
+    cloud [label="cloud"]
+  }
+
+  {
+    edge [color=lightblue dir=both]
+    base -> summit
+    base -> tucson
+    base -> cloud
+
+    summit -> tucson
+    summit -> cloud
+
+    tucson -> cloud
+  }
+}
