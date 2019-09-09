@@ -3,10 +3,11 @@ digraph top {
   ranksep=0.5
   rankdir=TB
   overlap=false
+  newrank=true
   clusterrank=local
 
   {
-    node [shape=ellipse fontsize=14 style=filled fillcolor=white color=darkgreen]
+    node [shape=ellipse fontsize=12 style=filled fillcolor=white color=darkgreen fontcolor=darkgreen]
     base [label="base"]
     summit [label="summit"]
     tucson [label="tucson"]
